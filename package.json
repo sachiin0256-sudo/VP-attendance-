@@ -1,0 +1,16 @@
+{
+  "name": "vp-attendance-android",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p www && cp index.html www/index.html && npx cap sync android",
+    "android:debug": "npm run build && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.4.3",
+    "@capacitor/android": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
