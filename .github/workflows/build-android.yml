@@ -25,6 +25,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+      - name: Confirm Android SDK location
+        run: echo "Android SDK: $ANDROID_HOME"
       - name: Install Android SDK packages
         run: |
           yes | sdkmanager --licenses
