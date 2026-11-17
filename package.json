@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p www && cp index.html www/index.html && npx cap sync android",
+    "build": "mkdir -p www && cp index.html www/index.html && cp manifest.json www/manifest.json && cp sw.js www/sw.js && npx cap sync android",
     "android:debug": "npm run build && cd android && ./gradlew assembleDebug"
   },
   "dependencies": {
